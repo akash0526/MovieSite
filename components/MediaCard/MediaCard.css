@@ -1,0 +1,72 @@
+.media-card {
+  /* width: 100%;
+  max-width: 260px; */
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin: 1rem;
+}
+
+.media-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.media-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-content {
+  padding: 1rem;
+}
+
+.media-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.media-date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.media-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.genre-badge {
+  font-size: 0.75rem;
+  background-color: #eef;
+  color: #336;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+}
+
+.media-overview {
+  font-size: 0.85rem;
+  color: #333;
+  max-height: 3.6em; /* roughly 3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.media-rating {
+  font-weight: 600;
+  color: #e09f3e;
+  margin-top: 0.5rem;
+}

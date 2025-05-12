@@ -1,0 +1,32 @@
+src/
+├── App.jsx                      # Root router
+├── main.jsx                     # Entry point
+├── assets/
+│   └── styles/                  # Global CSS
+│       ├── main.css             # Tailwind imports
+│       └── skeleton.css         # Loading animations
+├── components/
+│   ├── ads/
+│   │   └── AdBanner.jsx         # Ad component
+│   ├── media/
+│   │   ├── MediaCard.jsx        # Movie/TV card
+│   │   ├── MediaGrid.jsx        # Responsive grid
+│   │   └── SkeletonCard.jsx     # Loading placeholder
+│   └── ui/
+│       ├── Header.jsx
+│       ├── Search.jsx
+│       └── ThemeToggle.jsx      # Dark/light mode
+├── contexts/
+│   └── WatchlistContext.jsx     # Global state
+├── hooks/
+│   ├── useDebounce.js           # Search optimization
+│   └── useLocalStorage.js       # Watchlist persistence
+├── pages/
+│   ├── Home.jsx                 # Trending content
+│   ├── Search.jsx               # Filterable results
+│   ├── Watchlist.jsx            # Saved items
+│   └── [mediaType]/
+│       └── [id].jsx             # Dynamic details page
+└── utils/
+    ├── api.js                   # TMDB config
+    └── helpers.js               # Formatting functions
