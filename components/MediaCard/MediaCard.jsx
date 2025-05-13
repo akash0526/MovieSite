@@ -27,7 +27,10 @@ export default function MediaCard({ item }){
         className="media-image"
       />
       <div className="media-content">
-        <h2 className="media-title">{item.title}</h2>
+        <div className='media-heading'>
+            <h2 className="media-title">{item.title}</h2>
+            <div className="media-rating">⭐ {item.vote_average.toFixed(1)}</div>
+        </div>
         <p className="media-date">{item.release_date}</p>
         <div className="media-genres">
           {item.genre_ids.slice(0, 3).map((id) => (
