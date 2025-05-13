@@ -40,7 +40,7 @@ export default function MediaCard({ item }){
           ))}
         </div>
         <p className="media-overview">{item.overview}</p>
-        <div className="media-rating">⭐ {item.vote_average.toFixed(1)}</div>
+        {/* <div className="media-rating">⭐ {item.vote_average.toFixed(1)}</div> */}
       </div>
     </div>
     )
