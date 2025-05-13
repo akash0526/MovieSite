@@ -8,7 +8,7 @@ export const fetchTrending = async() =>{
     console.log("Fetching URL:", url);
     const response = await fetch(url);
     console.log("HTTP Status:", response.status);
-    const data= response.json();
+    const data=await response.json();
     return data;
     }
     catch(error){
